@@ -131,6 +131,7 @@ a {
   width: 46px;
   height: 46px;
   border-radius: 16px;
+  font-size: 17px;
   display: grid;
   place-items: center;
   background: white;
@@ -149,7 +150,7 @@ a {
   display: flex;
   align-items: center;
   gap: 18px;
-  font-size: 14px;
+  font-size: 17px;
   color: var(--muted);
 }
 
@@ -229,7 +230,7 @@ h6,
 .tag,
 .stat-card strong,
 .timeline-year {
-  font-family: "Libre Baskerville", "Noto Serif TC", Georgia, "Times New Roman", serif;
+  font-family: "Inter", "Noto Sans TC", sans-serif;
 }
 
 .hero-subtitle {
@@ -458,6 +459,7 @@ h6,
   z-index: 2;
   width: 100%;
   height: 260px;
+  margin-top: 24px;
 }
 
 .signal-line {
@@ -926,4 +928,190 @@ html[lang="en"] .stat-card strong {
 html[lang="en"] .stat-card span {
   text-align: left;
   line-height: 1.7;
+}
+
+/* ===== Footer ===== */
+
+.site-footer {
+  position: relative;
+  margin-top: 120px;
+  padding: 80px 6vw 32px;
+  background:
+    radial-gradient(circle at 8% 20%, rgba(77, 168, 218, 0.18), transparent 28%),
+    radial-gradient(circle at 92% 30%, rgba(127, 219, 255, 0.22), transparent 30%),
+    linear-gradient(135deg, rgba(239, 248, 255, 0.96), rgba(255, 255, 255, 0.98));
+  border-top: 1px solid rgba(15, 76, 129, 0.12);
+  color: #16324f;
+  overflow: hidden;
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(77, 168, 218, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(77, 168, 218, 0.08) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+  pointer-events: none;
+}
+
+.site-footer::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: -80px;
+  width: 520px;
+  height: 240px;
+  background:
+    repeating-radial-gradient(
+      ellipse at center,
+      rgba(77, 168, 218, 0.16) 0 1px,
+      transparent 1px 12px
+    );
+  border-radius: 50%;
+  opacity: 0.5;
+  transform: rotate(-12deg);
+  pointer-events: none;
+}
+
+.footer-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 28px;
+}
+
+.footer-brand img {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 12px 32px rgba(15, 76, 129, 0.12);
+}
+
+.footer-brand h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.25;
+  color: #0f355c;
+  font-weight: 800;
+}
+
+.footer-brand p {
+  margin: 8px 0 0;
+  color: #0f6ea8;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.footer-description {
+  max-width: 520px;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 2;
+  color: #40566f;
+}
+
+.footer-contact {
+  position: relative;
+  padding-left: 64px;
+  border-left: 1px solid rgba(15, 76, 129, 0.18);
+}
+
+.footer-contact h3 {
+  margin: 0 0 28px;
+  color: #0f355c;
+  font-size: 1.55rem;
+  font-weight: 800;
+}
+
+.footer-contact h3::after {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 3px;
+  margin-top: 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #0f4c81, #7fdbff);
+}
+
+.footer-contact p {
+  margin: 0 0 18px;
+  color: #40566f;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.footer-contact a {
+  color: #0f6ea8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  margin: 56px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid rgba(15, 76, 129, 0.14);
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #536b86;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* 手機版 */
+@media (max-width: 768px) {
+  .site-footer {
+    margin-top: 80px;
+    padding: 56px 24px 28px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    align-items: flex-start;
+  }
+
+  .footer-brand img {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+  }
+
+  .footer-contact {
+    padding-left: 0;
+    border-left: none;
+    padding-top: 32px;
+    border-top: 1px solid rgba(15, 76, 129, 0.14);
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
+  }
 }
