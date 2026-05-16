@@ -3,12 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>林惠菁教授｜Dr. Lin's Electrophysiology World</title>
+  <title>林惠菁教授實驗室｜動物行為・電生理學・神經訊息傳遞</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <div class="site-shell">
     <div class="particle-field"></div>
+
     <div class="wave-bg" aria-hidden="true">
       <svg viewBox="0 0 1440 360" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 210 C120 132 215 288 340 203 C460 120 542 262 662 188 C788 110 876 234 1005 176 C1126 122 1236 170 1440 95" stroke="#4DA8DA" stroke-width="3" opacity="0.55"/>
@@ -18,23 +25,26 @@
 
     <header class="navbar">
       <div class="nav-inner">
-        <a href="#home" class="brand" aria-label="回到首頁">
+        <a href="index.html#home" class="brand" aria-label="回到首頁">
           <span class="brand-mark">
-            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-              <path d="M10 25C17 25 15 10 24 10C33 10 31 25 38 25" stroke="white" stroke-width="3" stroke-linecap="round"/>
-              <path d="M10 31C16 31 17 20 24 20C31 20 32 31 38 31" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
-            </svg>
+            <img src="logo.png" alt="林惠菁教授實驗室標誌">
           </span>
-          <span>Dr. Lin Lab</span>
+          <span>林惠菁教授實驗室</span>
         </a>
 
         <nav class="nav-links" id="navLinks">
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
-          <a href="#teaching">Teaching</a>
-          <a href="#facebook">Electrophysiology World</a>
-          <a href="#join" class="nav-cta">Join Us</a>
+          <a href="#about">關於教授</a>
+          <a href="#research">研究方向</a>
+          <a href="#publications">著作發表</a>
+          <a href="#teaching">教學資源</a>
+          <a href="#facebook">電生理世界</a>
+          <a href="#join" class="nav-cta">加入我們</a>
+
+          <div class="language-switch">
+            <a href="index.html" class="active">中文</a>
+            <span>/</span>
+            <a href="index_en.html">EN</a>
+          </div>
         </nav>
 
         <button class="mobile-menu-button" id="menuButton" aria-label="開啟選單">
@@ -48,28 +58,36 @@
     <main>
       <section class="hero" id="home">
         <div class="hero-copy reveal">
-          <div class="eyebrow">Physiology・Electrophysiology・Neural Signaling</div>
+          <div class="eyebrow">動物行為・電生理學・神經訊息傳遞</div>
+
           <h1>林惠菁 教授</h1>
-          <div class="hero-subtitle">Exploring the Electrical Language of Life</div>
+
+          <div class="hero-subtitle">解讀生命中的電訊號</div>
+
           <p class="hero-description">
-            解讀生命中的電訊號，以生理學與電生理技術探索神經訊息傳遞、細胞功能與生物系統中的精密調控。
+            本實驗室以疾病動物模式為基礎，結合動物行為、電生理學、神經訊息傳遞與藥物學研究，
+            探索精神疾患與神經發育疾病的致病機轉，並推進具臨床應用潛力的轉譯醫學研究。
           </p>
+
           <div class="hero-actions">
-            <a class="button primary" href="#research">Explore Research</a>
-            <a class="button secondary" href="#join">Contact the Lab</a>
+            <a class="button primary" href="#research">查看研究方向</a>
+            <a class="button secondary" href="#join">聯絡實驗室</a>
           </div>
+
           <div class="hero-stats">
             <div class="stat-card">
-              <strong>Electro</strong>
-              <span>membrane potential & ion channel</span>
+              <strong>動物行為</strong>
+              <span>疾病動物模式與行為分析</span>
             </div>
+
             <div class="stat-card">
-              <strong>Neuro</strong>
-              <span>neural signaling & physiology</span>
+              <strong>電生理學</strong>
+              <span>膜電位、突觸可塑性與神經活動</span>
             </div>
+
             <div class="stat-card">
-              <strong>Lab</strong>
-              <span>training, research & outreach</span>
+              <strong>神經訊息</strong>
+              <span>神經傳遞、腦區功能與疾病機轉</span>
             </div>
           </div>
         </div>
@@ -79,18 +97,18 @@
           <div class="orb two"></div>
 
           <aside class="professor-card">
-            <div class="professor-photo" role="img" aria-label="教授照片佔位圖"></div>
-            <h2>Professor Hui-Ching Lin</h2>
-            <p>Professor of Physiology<br />Electrophysiology & Cellular Physiology</p>
+            <div class="professor-photo" role="img" aria-label="林惠菁教授照片"></div>
+            <h2>林惠菁 教授</h2>
+            <p>生理學科暨生理學研究所<br />動物行為・電生理學・神經訊息傳遞</p>
           </aside>
 
           <div class="signal-card" aria-label="膜電位曲線示意">
             <div class="signal-top">
               <div>
-                <div class="signal-label">Action Potential</div>
-                <p class="signal-note">Membrane voltage dynamics</p>
+                <div class="signal-label">動作電位</div>
+                <p class="signal-note">神經活動與膜電位變化</p>
               </div>
-              <div class="signal-chip">Live Signal</div>
+              <div class="signal-chip">神經訊號</div>
             </div>
 
             <svg class="signal-svg" viewBox="0 0 680 310" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,6 +126,7 @@
                   </feMerge>
                 </filter>
               </defs>
+
               <path d="M34 232 H124 C144 232 152 226 164 205 L198 144 C210 122 216 76 235 68 C252 61 266 119 278 167 L306 274 C318 314 344 262 360 234 C382 196 400 231 430 231 H646" stroke="url(#lineGradient)" stroke-width="7" stroke-linecap="round" class="signal-line" filter="url(#glow)"/>
               <path d="M70 70 C120 35 174 50 205 92 C242 143 282 130 322 98 C378 52 437 78 470 128 C510 188 564 184 620 136" stroke="#0F4C81" stroke-opacity="0.14" stroke-width="2"/>
               <path d="M76 142 C135 110 170 150 214 188 C265 232 324 205 366 168 C412 128 462 122 520 164 C566 198 604 200 642 174" stroke="#4DA8DA" stroke-opacity="0.16" stroke-width="2"/>
@@ -127,43 +146,63 @@
 
       <section id="about">
         <div class="section-heading reveal">
-          <div class="section-kicker">About Professor</div>
-          <h2>以嚴謹科學訓練，連結學生、研究與公共知識傳播。</h2>
-          <p>此區可放置教授的學歷、經歷、榮譽與研究理念，建立網站的學術可信度與親和形象。</p>
+          <div class="section-kicker">關於教授</div>
+          <h2>以嚴謹的神經科學訓練，連結基礎研究、臨床轉譯與學生培育。</h2>
+          <p>
+            林惠菁教授長期投入精神生物醫學、神經科學與藥物學相關研究，
+            透過疾病動物模式與神經科學技術，探索精神疾患與神經發育疾病的病理機轉。
+          </p>
         </div>
 
         <div class="about-layout">
           <div class="glass-card reveal">
-            <div class="icon-box">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3L20 7L12 11L4 7L12 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M6 9.5V15C6 16.7 8.7 19 12 19C15.3 19 18 16.7 18 15V9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
+            <div class="icon-box">🔬</div>
+            <h3>研究理念</h3>
+            <p>
+              實驗室以動物行為、電生理學與神經訊息傳遞為核心，從疾病行為表現出發，
+              進一步追問神經系統如何透過電訊號、突觸可塑性與分子調控影響個體反應。
+            </p>
+            <p>
+              透過與臨床醫學團隊合作，實驗室期望建立具有轉譯價值的研究模式，
+              尋找精神疾患與神經發育疾病的新穎治療標的與治療策略。
+            </p>
+
+            <div class="tag-row">
+              <span class="tag">動物行為</span>
+              <span class="tag">電生理學</span>
+              <span class="tag">神經訊息傳遞</span>
             </div>
-            <h3>Research Philosophy</h3>
-            <p>從細胞層級理解生命系統如何運作，並透過電生理訊號捕捉神經與生理調控中的關鍵機制。</p>
           </div>
 
           <div class="timeline reveal">
             <div class="timeline-item">
-              <div class="timeline-year">Education</div>
+              <div class="timeline-year">學歷</div>
               <div>
-                <strong>學歷資料</strong>
-                <p>可放置博士、碩士、學士與主要研究訓練背景。</p>
+                <strong>學術訓練</strong>
+                <p>1998　台北醫學大學藥學系　藥學士</p>
+                <p>2000　國立成功大學藥理所　碩士</p>
+                <p>2008　國立成功大學基礎醫學所　博士</p>
               </div>
             </div>
+
             <div class="timeline-item">
-              <div class="timeline-year">Experience</div>
+              <div class="timeline-year">經歷</div>
               <div>
                 <strong>學術與教學經歷</strong>
-                <p>可放置現任職稱、過去任職、實驗室主持與跨領域合作經驗。</p>
+                <p>2025－迄今　國立陽明交通大學　生理學科暨生理學研究所　科主任／所長</p>
+                <p>2022－迄今　國立陽明交通大學　生理學科暨生理學研究所　教授</p>
+                <p>2019－2021　國立陽明大學　生理學科暨研究所　教授</p>
+                <p>2016－2019　國立陽明大學　生理學科暨研究所　副教授</p>
+                <p>2011－2016　國立陽明大學　生理學科暨研究所　助理教授</p>
+                <p>2008－2011　國立成功大學藥理所　博士後研究員</p>
               </div>
             </div>
+
             <div class="timeline-item">
-              <div class="timeline-year">Honors</div>
+              <div class="timeline-year">專長</div>
               <div>
-                <strong>榮譽與專業服務</strong>
-                <p>可放置獲獎紀錄、學會服務、期刊審稿、研究計畫等。</p>
+                <strong>研究專長</strong>
+                <p>動物行為、電生理學、神經訊息傳遞、精神生物醫學、藥物學與轉譯醫學研究。</p>
               </div>
             </div>
           </div>
@@ -172,92 +211,138 @@
 
       <section id="research">
         <div class="section-heading reveal">
-          <div class="section-kicker">Research</div>
-          <h2>從離子通道到神經訊號，解析生命中的電性語言。</h2>
-          <p>用清楚的卡片式架構呈現研究主題，讓學生、合作對象與一般讀者都能快速理解實驗室方向。</p>
+          <div class="section-kicker">研究方向</div>
+          <h2>以疾病動物模式連結精神生物醫學、神經科學與臨床轉譯。</h2>
+          <p>
+            實驗室聚焦於精神疾患與神經發育疾病，結合動物行為、電生理學、
+            神經訊息傳遞與藥物學研究，探索疾病機轉與新興治療策略。
+          </p>
         </div>
 
         <div class="grid three">
           <article class="glass-card research-card reveal">
-            <div class="icon-box">⚡</div>
-            <h3>電生理</h3>
-            <p>透過膜電位、動作電位、離子流與細胞訊號紀錄，觀察細胞如何接收與傳遞訊息。</p>
+            <div class="icon-box">🐁</div>
+            <h3>疾病動物模式</h3>
+            <p>
+              透過精神醫學與神經發育疾病相關的動物模式，觀察疾病行為表徵，
+              並進一步連結神經活動、突觸可塑性與病理機轉。
+            </p>
             <div class="tag-row">
-              <span class="tag">Action Potential</span>
-              <span class="tag">Patch Clamp</span>
+              <span class="tag">動物行為</span>
+              <span class="tag">疾病模式</span>
             </div>
           </article>
 
           <article class="glass-card research-card reveal">
             <div class="icon-box">🧠</div>
-            <h3>神經科學</h3>
-            <p>研究神經細胞間的訊號傳遞、興奮性調控，以及神經系統功能背後的生理機制。</p>
+            <h3>頑固型憂鬱症</h3>
+            <p>
+              探討抗憂鬱藥物阻抗之憂鬱症動物模式，研究前額葉皮質、
+              杏仁核與突觸可塑性異常，並評估新興治療機轉。
+            </p>
             <div class="tag-row">
-              <span class="tag">Neural Signaling</span>
-              <span class="tag">Synaptic Function</span>
+              <span class="tag">憂鬱症</span>
+              <span class="tag">轉譯醫學</span>
             </div>
           </article>
 
           <article class="glass-card research-card reveal">
-            <div class="icon-box">🔬</div>
-            <h3>細胞訊號</h3>
-            <p>連結細胞層級的訊號變化與整體生理功能，理解生命系統如何維持動態平衡。</p>
+            <div class="icon-box">⚡</div>
+            <h3>自閉症與神經發育</h3>
+            <p>
+              以類自閉症行為之齧齒類動物為模型，探討神經傳導失衡、
+              突觸功能異常與跨世代影響，尋找可能的治療策略。
+            </p>
             <div class="tag-row">
-              <span class="tag">Cellular Physiology</span>
-              <span class="tag">Ion Channels</span>
+              <span class="tag">自閉症</span>
+              <span class="tag">神經發育</span>
             </div>
           </article>
+        </div>
+
+        <div class="research-more-action">
+          <a class="button primary" href="research.html">閱讀完整研究方向</a>
         </div>
       </section>
 
       <section id="publications">
         <div class="section-heading reveal">
-          <div class="section-kicker">Publications</div>
+          <div class="section-kicker">著作發表</div>
           <h2>代表著作與研究成果</h2>
-          <p>可連結 Google Scholar、PubMed、ORCID 或學校教師著作系統，讓研究成果更容易被查找。</p>
+          <p>
+            實驗室研究成果涵蓋頑固型憂鬱症、自閉症、神經訊息傳遞、
+            突觸可塑性與轉譯醫學等主題。首頁僅列出部分代表性研究，
+            完整文獻列表請見著作發表頁面。
+          </p>
         </div>
 
         <div class="publication-list reveal">
           <article class="publication-item">
-            <strong>Representative Paper Title on Electrophysiology and Neural Function</strong>
-            <div class="publication-meta">Authors. Journal Name. Year. DOI / PubMed link.</div>
-            <p>簡短說明此篇研究回答了什麼問題、使用哪些技術，以及對生理學或神經科學的貢獻。</p>
+            <strong>頑固型憂鬱症動物模式與臨床轉譯相關研究</strong>
+            <div class="publication-meta">
+              Progress in Neuro-Psychopharmacology & Biological Psychiatry. 2019.
+            </div>
+            <div class="tag-row">
+              <span class="tag">憂鬱症</span>
+              <span class="tag">轉譯醫學</span>
+            </div>
           </article>
+
           <article class="publication-item">
-            <strong>Ion Channel Regulation and Cellular Signal Transduction</strong>
-            <div class="publication-meta">Authors. Journal Name. Year. DOI / PubMed link.</div>
-            <p>可以挑選 3–5 篇最能代表實驗室特色的論文，不需要把全部論文塞在首頁。</p>
+            <strong>iTBS 改善憂鬱行為與突觸可塑性異常之機轉研究</strong>
+            <div class="publication-meta">
+              Cerebral Cortex. 2021.
+            </div>
+            <div class="tag-row">
+              <span class="tag">iTBS</span>
+              <span class="tag">BDNF</span>
+            </div>
           </article>
+
           <article class="publication-item">
-            <strong>Cellular Physiology Mechanisms in Neural Communication</strong>
-            <div class="publication-meta">Authors. Journal Name. Year. DOI / PubMed link.</div>
-            <p>若論文很多，可以另開 Publications 頁面，首頁只呈現精選成果與外部連結。</p>
+            <strong>自閉症相關動物模式中社交行為與突觸調控之跨世代研究</strong>
+            <div class="publication-meta">
+              Journal of Biomedical Science. 2022.
+            </div>
+            <div class="tag-row">
+              <span class="tag">自閉症</span>
+              <span class="tag">突觸平衡</span>
+            </div>
           </article>
+        </div>
+
+        <div class="research-more-action">
+          <a class="button primary" href="publications.html">查看完整文獻列表</a>
         </div>
       </section>
 
       <section id="teaching">
         <div class="section-heading reveal">
-          <div class="section-kicker">Teaching</div>
-          <h2>把抽象的電訊號，轉化成學生能理解的生命故事。</h2>
-          <p>此區可放課程、講義、教學資源、實驗教學與學生常見問題。</p>
+          <div class="section-kicker">教學資源</div>
+          <h2>從行為觀察到神經電訊號，帶領學生理解神經生理學的核心問題。</h2>
+          <p>
+            本區可整理課程資訊、教學資源、實驗訓練內容與學生常見問題，
+            使有興趣加入實驗室的學生更容易理解研究與學習方向。
+          </p>
         </div>
 
         <div class="grid three">
           <div class="glass-card reveal">
             <div class="icon-box">📘</div>
-            <h3>生理學</h3>
-            <p>基礎生理學、細胞生理學、神經生理學等課程資訊。</p>
+            <h3>生理學與神經科學</h3>
+            <p>介紹神經生理學、細胞生理學與精神生物醫學相關基礎概念。</p>
           </div>
+
           <div class="glass-card reveal">
-            <div class="icon-box">📈</div>
-            <h3>電生理方法</h3>
-            <p>膜電位、動作電位、離子通道與實驗資料判讀。</p>
+            <div class="icon-box">⚡</div>
+            <h3>電生理學方法</h3>
+            <p>認識膜電位、動作電位、突觸可塑性與神經活動紀錄的基本原理。</p>
           </div>
+
           <div class="glass-card reveal">
             <div class="icon-box">🎓</div>
-            <h3>學生資源</h3>
-            <p>研究所招生、專題生訓練、論文指導與實驗室生活。</p>
+            <h3>學生訓練</h3>
+            <p>提供研究所招生、專題生訓練、論文指導與實驗室學習方向說明。</p>
           </div>
         </div>
       </section>
@@ -265,29 +350,37 @@
       <section id="facebook">
         <div class="facebook-panel">
           <div class="section-heading reveal no-margin">
-            <div class="section-kicker">Dr. Lin's Electrophysiology World</div>
-            <h2>把專業知識帶到更多人看得懂的地方。</h2>
-            <p>可整合教授 Facebook「Dr.Lin的電生理世界」內容，呈現科普文章、課程活動、研究分享與實驗室近況。</p>
+            <div class="section-kicker">Dr. Lin 的電生理世界</div>
+            <h2>將專業知識帶到更多人看得懂的地方。</h2>
+            <p>
+              本區可整合 Facebook「Dr. Lin 的電生理世界」內容，
+              呈現科普文章、課程活動、研究分享與實驗室近況。
+            </p>
+
             <div class="hero-actions facebook-action">
-              <a class="button primary" href="#" target="_blank" rel="noreferrer">Visit Facebook Page</a>
+              <a class="button primary" href="https://www.facebook.com/people/DrLin%E7%9A%84%E9%9B%BB%E7%94%9F%E7%90%86%E4%B8%96%E7%95%8C/100075885976029/" target="_blank" rel="noreferrer">
+                前往 Facebook 粉專
+              </a>
             </div>
           </div>
 
           <div class="post-stack reveal">
             <article class="fb-post">
-              <span>Latest Post</span>
-              <h3>什麼是 action potential？</h3>
-              <p>用一張圖理解神經細胞如何用電訊號傳遞訊息。</p>
+              <span>科普文章</span>
+              <h3>什麼是動作電位？</h3>
+              <p>用清楚的圖像與語言理解神經細胞如何透過電訊號傳遞訊息。</p>
             </article>
+
             <article class="fb-post">
-              <span>Science Outreach</span>
-              <h3>離子通道不是門，但真的像門一樣重要</h3>
-              <p>從細胞膜上的通道開始，重新理解生命的動態平衡。</p>
+              <span>研究分享</span>
+              <h3>離子通道與神經訊息傳遞</h3>
+              <p>從細胞膜上的通道開始，理解神經活動與生理調控的基本機制。</p>
             </article>
+
             <article class="fb-post">
-              <span>Lab News</span>
-              <h3>實驗室招生與研究方向介紹</h3>
-              <p>歡迎對生理學、神經科學與電生理技術有興趣的學生加入。</p>
+              <span>實驗室近況</span>
+              <h3>招生與研究方向介紹</h3>
+              <p>歡迎對精神生物醫學、神經科學與電生理學有興趣的學生加入。</p>
             </article>
           </div>
         </div>
@@ -295,26 +388,30 @@
 
       <section id="members">
         <div class="section-heading reveal">
-          <div class="section-kicker">Lab Members</div>
-          <h2>研究團隊</h2>
-          <p>以乾淨、親和的卡片呈現研究生、專題生與合作成員，讓網站不只專業，也有人味。</p>
+          <div class="section-kicker">研究團隊</div>
+          <h2>實驗室成員</h2>
+          <p>
+            本區可放置研究生、專題生與合作成員介紹，呈現實驗室的人才培育與研究氛圍。
+          </p>
         </div>
 
         <div class="grid three">
           <div class="glass-card member-card reveal">
             <div class="avatar">PhD</div>
             <h3>博士班學生</h3>
-            <p>研究主題：神經訊號與電生理分析</p>
+            <p>研究主題：神經訊息傳遞、疾病動物模式與轉譯醫學。</p>
           </div>
+
           <div class="glass-card member-card reveal">
             <div class="avatar">MS</div>
             <h3>碩士班學生</h3>
-            <p>研究主題：細胞生理與離子通道</p>
+            <p>研究主題：動物行為、電生理學與神經可塑性。</p>
           </div>
+
           <div class="glass-card member-card reveal">
             <div class="avatar">UG</div>
             <h3>專題生</h3>
-            <p>研究主題：基礎實驗訓練與資料整理</p>
+            <p>研究主題：基礎實驗訓練、行為分析與文獻整理。</p>
           </div>
         </div>
       </section>
@@ -322,23 +419,27 @@
       <section id="join">
         <div class="join-banner reveal">
           <div>
-            <h2>Join Us</h2>
-            <p>如果你對生理學、神經科學、電生理技術或細胞訊號傳遞有興趣，歡迎與實驗室聯繫，了解研究所招生、專題生與合作機會。</p>
+            <h2>加入我們</h2>
+            <p>
+              歡迎對精神生物醫學、神經科學、動物行為、電生理學與轉譯醫學有興趣的學生加入團隊。
+            </p>
+
             <div class="hero-actions join-action">
-              <a class="button secondary" href="mailto:example@nycu.edu.tw">Email the Lab</a>
+              <a class="button secondary" href="mailto:example@nycu.edu.tw">聯絡實驗室</a>
             </div>
           </div>
+
           <ul class="join-list">
-            <li>適合對基礎生理學與神經科學有興趣的學生</li>
-            <li>歡迎想學習電生理技術與資料分析者</li>
-            <li>可放置招生條件、聯絡方式與實驗室位置</li>
+            <li>適合對精神疾患與神經發育疾病有興趣的學生</li>
+            <li>歡迎想學習動物行為、電生理與神經科學技術者</li>
+            <li>可進一步放置招生條件、研究生訓練內容與聯絡方式</li>
           </ul>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>© 2026 Dr. Lin's Electrophysiology World. Designed with scientific clarity, warmth, and modern visual language.</p>
+      <p>© 2026 林惠菁教授實驗室。以科學、轉譯與教育連結生命中的電訊號。</p>
     </footer>
   </div>
 

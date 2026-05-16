@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications｜Prof. Hui-Ching Lin Laboratory</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="publications.css" />
+</head>
+
+<body>
+  <div class="site-shell">
+    <div class="particle-field"></div>
+
+    <div class="wave-bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 210 C120 132 215 288 340 203 C460 120 542 262 662 188 C788 110 876 234 1005 176 C1126 122 1236 170 1440 95" stroke="#4DA8DA" stroke-width="3" opacity="0.55"/>
+        <path d="M0 262 C156 168 260 315 410 230 C554 148 632 295 790 210 C942 128 1030 260 1185 185 C1290 135 1362 150 1440 126" stroke="#7FDBFF" stroke-width="2" opacity="0.74"/>
+      </svg>
+    </div>
+
+    <header class="navbar">
+      <div class="nav-inner">
+        <a href="index_en.html#home" class="brand" aria-label="Back to homepage">
+          <span class="brand-mark">
+            <img src="logo.png" alt="Prof. Hui-Ching Lin Laboratory Logo">
+          </span>
+          <span>Lin Laboratory</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="index_en.html#about">About</a>
+          <a href="index_en.html#research">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="index_en.html#teaching">Teaching</a>
+          <a href="index_en.html#facebook">Outreach</a>
+          <a href="index_en.html#join" class="nav-cta">Join Us</a>
+
+          <div class="language-switch">
+            <a href="index.html">中文首頁</a>
+            <span>/</span>
+            <a href="index_en.html">EN Home</a>
+          </div>
+        </nav>
+
+        <button class="mobile-menu-button" id="menuButton" aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="publications-hero">
+        <div class="section-heading">
+          <div class="section-kicker">Publications</div>
+          <h1>Peer-Reviewed Research Publications</h1>
+          <p>
+            This page lists selected peer-reviewed publications from Prof. Hui-Ching Lin’s laboratory,
+            covering autism spectrum disorder, treatment-resistant depression, electrophysiology,
+            synaptic plasticity, neural signaling, deep brain stimulation, and translational neuroscience.
+          </p>
+        </div>
+
+        <div class="publication-overview">
+          <article>
+            <strong>54</strong>
+            <span>Publications Listed</span>
+          </article>
+          <article>
+            <strong>2000–2025</strong>
+            <span>Research Timeline</span>
+          </article>
+          <article>
+            <strong>Neuroscience</strong>
+            <span>Core Research Field</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="publications-toolbar-section">
+        <div class="publications-toolbar">
+          <label for="publicationSearch">Search publications</label>
+          <input id="publicationSearch" type="search" placeholder="Search by title, author, journal, year, or keyword..." />
+
+          <div class="publication-filter-row">
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="Autism">Autism</button>
+            <button class="filter-button" data-filter="Depression">Depression</button>
+            <button class="filter-button" data-filter="Synaptic Plasticity">Synaptic Plasticity</button>
+            <button class="filter-button" data-filter="Electrophysiology">Electrophysiology</button>
+            <button class="filter-button" data-filter="DBS">DBS</button>
+            <button class="filter-button" data-filter="Fear Memory">Fear Memory</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="publications-section">
+        <div class="publication-list-full" id="publicationList"></div>
+        <p class="empty-message" id="emptyMessage">No publications matched your search.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Prof. Hui-Ching Lin Laboratory. Publications.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script>
+    const publications = [
+      {
+        year: "2025",
+        title: "AMPK activation by ENERGI ameliorates behavioral and synaptic deficits in a mouse model of autism.",
+        citation: "Chu MC, Wu CC, Chung YJ, Chang CY, Wu HF, Tsai SC, Peng TN, Yang TJ,<strong> Lin HC*</strong>. Molecular Neurobiology. 2025 Nov. Accepted.",
+        tags: ["Autism", "AMPK", "Synaptic Deficits"]
+      },
+      {
+        year: "2025",
+        title: "Regulation of Ischemic Long-Term Potentiation in GluN2B and FKBP51 Underlying Cathodal Direct Current Stimulation.",
+        citation: "Lee CW, Tang CW, Chang CH, Chu MC, Hsieh TH, Chi H, <strong>Lin HC*</strong>. Neurochemical Research. 2025 Oct; 50(5):328. doi: 10.1007/s11064-025-04578-6.",
+        tags: ["Electrophysiology", "Synaptic Plasticity", "Stimulation"]
+      },
+      {
+        year: "2024",
+        title: "Soluble epoxide hydrolase deletion rescues behavioral and synaptic deficits by AMPK-mTOR pathway in autism animals.",
+        citation: "Chu MC, Wu HF, Lee CW, Wu CC, Chi H, Ko CY, Lee YC, Tang CW, Chen PS, <strong>Lin HC*</strong>. Progress in Neuropsychopharmacology & Biological Psychiatry. 2024 Nov 5:111190.",
+        tags: ["Autism", "AMPK-mTOR", "Synaptic Deficits"]
+      },
+      {
+        year: "2023",
+        title: "Transient plasticity response is regulated by histone deacetylase inhibitor in oxygen-glucose deprivation condition.",
+        citation: "Chu MC, Mao WC, Chang YC, Lu TI, Lee CW, Chang JC, Hsieh TH, Chang HS, Chen YF, Lin HS, Tang CW, <strong>Lin HC*</strong>. Pharmacological Reports. 2023 Sep 11. doi: 10.1007/s43440-023-00525-w.",
+        tags: ["Synaptic Plasticity", "Pharmacology", "Ischemia"]
+      },
+      {
+        year: "2023",
+        title: "The longer, the better? Longer left-sided prolonged intermittent theta burst stimulation in patients with major depressive disorder: A randomized sham-controlled study.",
+        citation: "Li CT, Cheng CM, <strong>Lin HC*</strong>, Yeh SH, Jeng JS, Wu HT, Bai YM, Tsai SJ, Su TP, Fitzgerald PB. Asian Journal of Psychiatry. 2023 Jun; 87:103686.",
+        tags: ["Depression", "iTBS", "Clinical Study"]
+      },
+      {
+        year: "2023",
+        title: "An efficient cellular image-based platform for high-content screening of neuroprotective agents against chemotherapy-induced neuropathy.",
+        citation: "Chan YC, Lo YC, Chang HS, <strong>Lin HC*</strong>, Chiu CC, Chen YF. Neurotoxicology. 2023 Apr; S0161-813X(23)00054-2.",
+        tags: ["Neuroprotection", "Screening", "Neurotoxicity"]
+      },
+      {
+        year: "2023",
+        title: "Different synaptic mechanisms of intermittent and continuous theta-burst stimulations in a severe foot-shock induced and treatment-resistant depression in a rat model.",
+        citation: "Lee CW, Chu MC, Wu HF, Chung YJ, Hsieh TH, Chang CY, Lin YC, Lu TY, Chang CH, Chi H, Chang HS, Chen YF, Li CT, <strong>Lin HC*</strong>. Experimental Neurology. 2023 Jan; 362:114338.",
+        tags: ["Depression", "iTBS", "cTBS", "Synaptic Plasticity"]
+      },
+      {
+        year: "2022",
+        title: "Cortical excitatory and inhibitory correlates of the fronto-limbic circuit in major depression and differential effects of left frontal brain stimulation in a randomized sham-controlled trial.",
+        citation: "Li CT, Juan CH,<strong> Lin HC*</strong>, Cheng CM, Wu HT, Yang BH, Tsai SJ, Su TP, Paul B Fitzgerald. Journal of Affective Disorders. 2022 Aug; 311:364-370. doi: 10.1016/j.jad.2022.05.107.",
+        tags: ["Depression", "Brain Stimulation", "Fronto-limbic Circuit"]
+      },
+      {
+        year: "2022",
+        title: "Generational synaptic functions of GABAA receptor β3 subunit deteriorations in an animal model of social deficit.",
+        citation: "Chu MC, Wu HF, Lee CW, Chung YJ, Chi H, Chen PS*, <strong>Lin HC*</strong>. Journal of Biomedical Science. 2022 Jul 29:51. doi: 10.1186/s12929-022-00835-w.",
+        tags: ["Autism", "GABAA Receptor", "Synaptic Function"]
+      },
+      {
+        year: "2022",
+        title: "FKBP51 mediates resilience to inflammation-induced anxiety through regulation of glutamic acid decarboxylase 65 expression in mouse hippocampus.",
+        citation: "Gan YL, Wang CY, He RH, Hsu PC, Yeh HH, Hsieh TH, <strong>Lin HC*</strong>, Cheng MY, Jeng CJ, Huang MC, Lee YH. Journal of Neuroinflammation. 2022 Jun; 19(1):152. doi: 10.1186/s12974-022-02517-8.",
+        tags: ["Anxiety", "Neuroinflammation", "Hippocampus"]
+      },
+      {
+        year: "2020",
+        title: "Mechanism of intermittent theta-burst stimulation in synaptic pathology in the prefrontal cortex in an antidepressant-resistant depression rat model.",
+        citation: "Lee CW, Wu HF, Chu MC, Chung YJ, Li CT*, <strong>Lin HC*</strong>. Cerebral Cortex. 2020. In press. *co-corresponding author.",
+        tags: ["Depression", "iTBS", "Prefrontal Cortex"]
+      },
+      {
+        year: "2020",
+        title: "Increased GABAergic inhibitory function against ischemic long-term potentiation in the CA1 region of the hippocampus.",
+        citation: "Chu MC, Lee JY, Lee HF, Chu KW, Wu HF, Lee CW, Lin CH, Tang CW*, <strong>Lin HC*</strong>. Biochemical and Biophysical Research Communications. 2020 Mar 29. pii: S0006-291X(20)30601-X. *co-corresponding author.",
+        tags: ["Electrophysiology", "Hippocampus", "GABA"]
+      },
+      {
+        year: "2020",
+        title: "Targeting the inhibition of fatty acid amide hydrolase ameliorate the endocannabinoid-mediated synaptic dysfunction in a valproic acid-induced rat model of Autism.",
+        citation: "Wu HF, Lu TY, Chu MC, Chen PS, Lee CW, <strong>Lin HC*</strong>. Neuropharmacology. 2020 Jan; 162:107736.",
+        tags: ["Autism", "Endocannabinoid", "Synaptic Dysfunction"]
+      },
+      {
+        year: "2019",
+        title: "Modulation of Theta-Band Local Field Potential Oscillations Across Brain Networks With Central Thalamic Deep Brain Stimulation to Enhance Spatial Working Memory.",
+        citation: "Chang CW, Lo YC, Lin SH, Yang SH,<strong> Lin HC*</strong>, Lin TC, Li SJ, Hsieh CC, Ro V, Chung YJ, Chang YC, Lee CW, Kuo CH, Chen SY, Chen YY. Frontiers in Neuroscience. 2019 Nov 26; 13:1269.",
+        tags: ["DBS", "Theta Oscillation", "Working Memory"]
+      },
+      {
+        year: "2019",
+        title: "MR imaging central thalamic deep brain stimulation restored autistic-like social deficits in the rat.",
+        citation: "Lin TC#, Lo YC#, <strong>Lin HC#</stong>, Li SJ, Lin SH, Wu HF, Chu MC, Lee CW, Lin IC, Chang CW, Liu YC, Chen TC, Lin YJ, Ian Shih YY, Chen YY. Brain Stimulation. 2019 Nov-Dec; 12(6):1410-1420.",
+        tags: ["Autism", "DBS", "Social Deficit"]
+      },
+      {
+        year: "2019",
+        title: "Antidepressant-resistant depression is characterized by reduced short- and long-interval cortical inhibition.",
+        citation: "Jeng JS, Li CT, <strong>Lin HC*</strong>, Tsai SJ, Bai YM, Su TP, Chang YW, Cheng CM. Psychological Medicine. 2019 Jun 3:1-7.",
+        tags: ["Depression", "Cortical Inhibition", "Clinical Study"]
+      },
+      {
+        year: "2019",
+        title: "Ketamine ameliorates severe traumatic event-induced antidepressant-resistant depression in a rat model through ERK activation.",
+        citation: "Lee CW, Chen YJ, Wu HF, Chung YJ, Lee YC, Li CT*, <strong>Lin HC*</strong>. Progress in Neuropsychopharmacology & Biological Psychiatry. 2019 Mar; 93:102-113.",
+        tags: ["Depression", "Ketamine", "ERK"]
+      },
+      {
+        year: "2018",
+        title: "Deep Brain Stimulation Modified Autism-like Deficits via the Serotonin System in a Valproic Acid-Induced Rat Model.",
+        citation: "Wu HF, Chen YJ, Chu MC, Hsu YT, Lu TY, Chen IT, Chen PS, <strong>Lin HC*</strong>. International Journal of Molecular Sciences. 2018 Sep; 19(9):E2840.",
+        tags: ["Autism", "DBS", "Serotonin"]
+      },
+      {
+        year: "2019",
+        title: "Potential therapeutic effect of curcumin, a natural mTOR inhibitor, in tuberous sclerosis complex.",
+        citation: "Kuo CJ, Huang CC, Chou SY, Lo YC, Kao TJ, Huang NK, Lin C, <strong>Lin HC*</strong>, Lee YC*. Phytomedicine. 2019 Feb; 54:132-139. *co-corresponding authors.",
+        tags: ["mTOR", "Tuberous Sclerosis", "Pharmacology"]
+      },
+      {
+        year: "2018",
+        title: "Znf179 E3 ligase-mediated TDP-43 polyubiquitination is involved in TDP-43-ubiquitinated inclusions-related neurodegenerative pathology.",
+        citation: "Lee YC, Huang WC, Lin JH, Kao TJ, <strong>Lin HC*</strong>, Lee KH, Lin HC, Shen CJ, Chang WC, Huang CC. Journal of Biomedical Science. 2018 Nov 8; 25(1):76.",
+        tags: ["Neurodegeneration", "TDP-43", "Ubiquitination"]
+      },
+      {
+        year: "2018",
+        title: "Genetic Deletion of Soluble Epoxide Hydroxylase Causes Anxiety-Like Behaviors in Mice.",
+        citation: "Lee HT, Lee KI, <strong>Lin HC*</strong>, Lee TS. Molecular Neurobiology. 2018 Jul. doi: 10.1007/s12035-018-1261-z.",
+        tags: ["Anxiety", "sEH", "Animal Behavior"]
+      },
+      {
+        year: "2018",
+        title: "D-Cycloserine ameliorates autism-like deficits by removing GluA2-containing AMPA receptors in a valproic acid-induced rat model.",
+        citation: "Wu HF, Chen PS, Hsu YT, Lee CW, Wang TF, Chen YJ, <strong>Lin HC*</strong>. Molecular Neurobiology. 2018 Jun; 55(6):4811-4824.",
+        tags: ["Autism", "D-Cycloserine", "AMPA Receptor"]
+      },
+      {
+        year: "2018",
+        title: "Blockade of soluble epoxide hydrolase attenuates post-ischemic neuronal hyperexcitation and confers resilience against stroke with TrkB activation.",
+        citation: "Chang LH, <strong>Lin HC*</strong>, Huang SS, Chen IC, Chu KW, Chih CL, Liang YW, Lee YC, Chen YY, Lee YH, Lee IH. Scientific Reports. 2018 Jan 8; 8(1):118.",
+        tags: ["Stroke", "sEH", "TrkB"]
+      },
+      {
+        year: "2018",
+        title: "Dexmedetomidine reduces lipopolysaccharide induced neuroinflammation, sickness behavior, and anhedonia.",
+        citation: "Yeh CH, Hsieh LP, Lin MC, Wei TS, <strong>Lin HC*</strong>, Chang CC, Hsing CH. PLoS One. 2018 Jan; 13(1):e0191070.",
+        tags: ["Neuroinflammation", "Anhedonia", "Behavior"]
+      },
+      {
+        year: "2017",
+        title: "Alleviation of N-methyl-D-aspartate Receptor-Dependent Long-term depression via regulation of the Glycogen Synthase Kinase-3β pathway in the amygdala of a valproic acid-induced animal model of autism.",
+        citation: "Wu HF, Chen PS, Chen YJ, Lee CW, Chen IT, <strong>Lin HC*</strong>. Molecular Neurobiology. 2017 Sep; 54(7):5264-5276.",
+        tags: ["Autism", "NMDA", "Amygdala"]
+      },
+      {
+        year: "2017",
+        title: "Soluble epoxide hydrolase inhibitor and 14, 15-epoxyeicosatrienoic acid-facilitated long-term potentiation through cAMP and CaMKII in the hippocampus.",
+        citation: "Wu HF#, Chen YJ#, Wu SZ, Lee CW, Chen IT, Lee YC, Huang CC, Hsing CH, Tang CW, <strong>Lin HC*</strong>. Neural Plasticity. 2017 Jul. #equal contribution.",
+        tags: ["Synaptic Plasticity", "Hippocampus", "CaMKII"]
+      },
+      {
+        year: "2017",
+        title: "Soluble Epoxide Hydrolase Inhibition Attenuates MPTP-Induced Neurotoxicity in the Nigrostriatal Dopaminergic System: Involvement of α-Synuclein Aggregation and ER Stress.",
+        citation: "Huang HJ, Wang YT, <strong>Lin HC*</strong>, Lee YH, Lin AM. Molecular Neurobiology. 2017 Aug. doi: 10.1007/s12035-017-0726-9.",
+        tags: ["Neurotoxicity", "sEH", "Parkinsonian Model"]
+      },
+      {
+        year: "2017",
+        title: "A proof-of-principle simulation for closed-loop control based on preexisting experimental thalamic DBS-enhanced instrumental learning.",
+        citation: "Wang CF, Yang SH, Lin SH, Chen PC, Lo YC, Pan HC, Lai HY, Liao LD, <strong>Lin HC*</strong>, Chen HY, Huang WC, Huang WJ, Chen YY. Brain Stimulation. 2017 Feb. pii: S1935-861X(17)30611-3.",
+        tags: ["DBS", "Closed-loop Control", "Learning"]
+      },
+      {
+        year: "2017",
+        title: "Loss of transient receptor potential ankyrin 1 channel deregulates emotional, social, cognitive, learning and memory development.",
+        citation: "Lee KI, <strong>Lin HC*</strong>, Lee HT, Tsai FC, Lee TS. Molecular Neurobiology. 2017 Jul; 54(5):3606-3617.",
+        tags: ["TRPA1", "Behavior", "Memory"]
+      },
+      {
+        year: "2017",
+        title: "Acrolein acts as a neurotoxin in the nigrostriatal dopaminergic system of rat: involvement of α-synuclein aggregation and programmed cell death.",
+        citation: "Wang YT, <strong>Lin HC*</strong>, Zhao WZ, Huang HJ, Lo YL, Wang HT, Lin AM. Scientific Reports. 2017 Apr 12; 7:45741.",
+        tags: ["Neurotoxicity", "Dopaminergic System", "α-Synuclein"]
+      },
+      {
+        year: "2017",
+        title: "Important roles of Ring Finger Protein 112 in embryonic vascular development and brain function.",
+        citation: "Tsou JH, Yang YC, Pao PC, <strong>Lin HC*</strong>, Huang NK, Lin ST, Hsu KS, Yeh CM, Lee KH, Kuo CJ, Yang DM, Lin JH, Chang WC, Lee YC. Molecular Neurobiology. 2017 Apr; 54(3):2286-2300.",
+        tags: ["Brain Function", "Development", "Molecular Neurobiology"]
+      },
+      {
+        year: "2016",
+        title: "Cortical inhibitory and excitatory function in drug-naive generalized anxiety disorder.",
+        citation: "Li CT, Lu CF, <strong>Lin HC*</strong>, Huang YZ, Juan CH, Su TP, Bai YM, Chen MH, Lin WC. Brain Stimulation. 2016 Dec. pii: S1935-861X(16)30389-8.",
+        tags: ["Anxiety", "Cortical Function", "Brain Stimulation"]
+      },
+      {
+        year: "2016",
+        title: "A sliced inverse regression decoding the forelimb movement from neuronal spikes in the rat motor cortex.",
+        citation: "Yang SH, Chen YY, Lin SH, Liao LD, Lu HS, Wang CF, Chen PC, Lo YC, Phan TD, Chao HY, <strong>Lin HC*</strong>, Lai HY, Huang WC. Frontiers in Neuroscience. 2016 Nov. doi: 10.3389/fnins.2016.00556.",
+        tags: ["Neural Decoding", "Motor Cortex", "Electrophysiology"]
+      },
+      {
+        year: "2016",
+        title: "Therapeutic effect of berberine on TDP-43-related pathogenesis in FTLD and ALS.",
+        citation: "Chang CF, Lee YH, Lee KH, <strong>Lin HC*</strong>, Chen CL, Shen CK, Huang CC. Journal of Biomedical Science. 2016 Oct; 23:72.",
+        tags: ["Neurodegeneration", "ALS", "TDP-43"]
+      },
+      {
+        year: "2016",
+        title: "Role of transient receptor potential Ankyrin 1 channels in Alzheimer’s disease.",
+        citation: "Lee KI, Lee HT, <strong>Lin HC*</strong>, Tasy HJ, Tsai FC, Shyue SK, Lee TS. Journal of Neuroinflammation. 2016 Apr; 13(1):92. doi: 10.1186/s12974-016-0557-z.",
+        tags: ["Alzheimer’s Disease", "TRPA1", "Neuroinflammation"]
+      },
+      {
+        year: "2016",
+        title: "Maternal exposure to di-(2-ethylhexyl) phthalate exposure deregulates blood pressure, adiposity, cholesterol metabolism and social interaction in mouse offspring.",
+        citation: "Lee KI, Chiang CW, <strong>Lin HC*</strong>, Zhao JF, Li CT, Shyue SK, Lee TS. Archives of Toxicology. 2016 May; 90(5):1211-1224.",
+        tags: ["Development", "Toxicology", "Social Behavior"]
+      },
+      {
+        year: "2016",
+        title: "Central thalamic deep-brain stimulation alters striatal–thalamic connectivity in cognitive neural behavior.",
+        citation: "<strong>Lin HC*</strong>#, Pan HC#, Lin SH, Lo YC, Shen Elise TH, Liao LD, Liao PH, Chien YW, Liao KD, Jaw FS, Chu KW, Lai HY, Chen YY. Frontiers in Neural Circuits. 2016 Jan 13; 9:87. doi: 10.3389/fncir.2015.00087. #equal contribution.",
+        tags: ["DBS", "Neural Circuits", "Cognition"]
+      },
+      {
+        year: "2015",
+        title: "Soluble epoxide hydrolase inhibitor enhances synaptic neurotransmission and plasticity in mouse prefrontal cortex.",
+        citation: "Wu HF, Yen HJ, Huang CC, Lee YC, Wu SZ, Lee TS, <strong>Lin HC*</strong>. Journal of Biomedical Science. 2015 Oct; 22:94. doi: 10.1186/s12929-015-0202-7.",
+        tags: ["Prefrontal Cortex", "Synaptic Plasticity", "sEH"]
+      },
+      {
+        year: "2015",
+        title: "Non-linear alteration of serotonin transport availability in posttraumatic stress disorder measured with 4-[18F]ADAM positron emission tomography.",
+        citation: "<strong>Lin HC*</strong>#, Li CT#, David Tan TW, Cheng CW, Chou TK, Kong FL, Yu TH, Huang WS, Su DP, Liu RS, Skye Yeh HH. Current Molecular Imaging. 2015; 4:57-64. #equal contribution.",
+        tags: ["PTSD", "Serotonin", "Imaging"]
+      },
+      {
+        year: "2015",
+        title: "Protein kinase C dependent growth-associated protein 43 phosphorylation regulates gephyrin aggregation at developing GABAergic synapses.",
+        citation: "Wang CY, <strong>Lin HC*</strong>#, Song YP#, Hsu YT#, Lin SY, Hsu PC, Lin CH, Hung CC, Hsu MC, Kuo YM, Lee YJ, Hsu CY, Lee YH. Molecular and Cellular Biology. 2015 May; 35(10):1712-1726. #equal contribution.",
+        tags: ["GABAergic Synapses", "Development", "Molecular Biology"]
+      },
+      {
+        year: "2014",
+        title: "Activation of mGluR2/3 underlies the effects of N-acetylcystein on amygdala associated autism-like phenotypes in a valproate-induced rat model of autism.",
+        citation: "Chen YW, <strong>Lin HC*</strong>, Ng MC, Hsiao YH, Wang CC, Gean PW, Chen PS. Frontiers in Behavioral Neuroscience. 2014 Jun; 8:219.",
+        tags: ["Autism", "Amygdala", "mGluR2/3"]
+      },
+      {
+        year: "2013",
+        title: "5-HT1A-receptor agonist modified amygdala activity and amygdala-associated social behavior in a valproate-induced rat autism model.",
+        citation: "Wang CC#, <strong>Lin HC*</strong>#, Chan YH, Gean PW, Yang YK, Chen PS. International Journal of Neuropsychopharmacology. 2013 Oct; 16(9):2027-2039. #equal contribution.",
+        tags: ["Autism", "Amygdala", "Serotonin"]
+      },
+      {
+        year: "2013",
+        title: "The Amygdala Excitatory/Inhibitory Balance in a Valproate-induced Rat Autism Model.",
+        citation: "<strong>Lin HC*</strong>, Gean PW, Wang CC, Chan YH, Chen PS. PLoS One. 2013 Jan; 8(1):e55248.",
+        tags: ["Autism", "Amygdala", "E/I Balance"]
+      },
+      {
+        year: "2011",
+        title: "GABAA receptor endocytosis in the basolateral amygdala is critical to the reinstatement of fear memory measured with fear-potentiated startle.",
+        citation: "<strong>Lin HC*</strong>, Tseng YC, Mao S, Gean PW. The Journal of Neuroscience. 2011 Jun; 31(24):8851-8861.",
+        tags: ["Fear Memory", "Amygdala", "GABAA Receptor"]
+      },
+      {
+        year: "2010",
+        title: "Alterations of excitatory transmission in the lateral amygdala during expression and extinction of fear memory.",
+        citation: "<strong>Lin HC*</strong>, Mao SC, Su CL, Gean PW. International Journal of Neuropsychopharmacology. 2010 Apr; 13(3):335-345.",
+        tags: ["Fear Memory", "Amygdala", "Excitatory Transmission"]
+      },
+      {
+        year: "2009",
+        title: "The role of prefrontal cortex CB1 receptors in the modulation of fear memory.",
+        citation: "<strong>Lin HC*</strong>, Mao SC, Su CL, Gean PW. Cerebral Cortex. 2009 Jan; 19(1):165-175.",
+        tags: ["Fear Memory", "Prefrontal Cortex", "CB1"]
+      },
+      {
+        year: "2009",
+        title: "Block of GABAA receptor insertion in the amygdala impairs extinction of conditioned fear.",
+        citation: "<strong>Lin HC*</strong>, Mao SC, Gean PW. Biological Psychiatry. 2009 Oct; 66(7):665-673.",
+        tags: ["Fear Memory", "Amygdala", "GABAA Receptor"]
+      },
+      {
+        year: "2009",
+        title: "Augmentation of fear extinction by infusion of glycine transporter blockers into the amygdala.",
+        citation: "Mao SC, <strong>Lin HC*</strong>, Gean PW. Molecular Pharmacology. 2009 Aug; 76(2):369-378.",
+        tags: ["Fear Memory", "Amygdala", "Glycine Transporter"]
+      },
+      {
+        year: "2008",
+        title: "Chronic cannabinoid administration in vivo compromises extinction of fear memory.",
+        citation: "<strong>Lin HC*</strong>, Mao SC, Chen PS, Gean PW. Learning & Memory. 2008 Dec; 15(12):876-884.",
+        tags: ["Fear Memory", "Cannabinoid", "Learning"]
+      },
+      {
+        year: "2008",
+        title: "Augmentation of Fear Extinction by D-Cycloserine is Blocked by Proteasome Inhibitors.",
+        citation: "Mao SC, <strong>Lin HC*</strong>, Gean PW. Neuropsychopharmacology. 2008 Dec; 33(13):3085-3095.",
+        tags: ["Fear Memory", "D-Cycloserine", "Proteasome"]
+      },
+      {
+        year: "2006",
+        title: "Effects of intra-amygdala infusion of CB1 receptor agonists on the reconsolidation of fear-potentiated startle.",
+        citation: "<strong>Lin HC*</strong>, Mao SC, Gean PW. Learning & Memory. 2006 May; 13(3):316-321.",
+        tags: ["Fear Memory", "Amygdala", "CB1"]
+      },
+      {
+        year: "2006",
+        title: "Synaptic expression of glutamate receptor after encoding of fear memory in the rat amygdala.",
+        citation: "Yeh SH, Mao SC, <strong>Lin HC*</strong>, Gean PW. Molecular Pharmacology. 2006 Jan; 69(1):299-308.",
+        tags: ["Fear Memory", "Glutamate Receptor", "Amygdala"]
+      },
+      {
+        year: "2000",
+        title: "Activation of group II metabotropic glutamate receptors induces long-term depression of synaptic transmission in the rat amygdala.",
+        citation: "<strong>Lin HC*</strong>, Wang SJ, Luo MZ, Gean PW. The Journal of Neuroscience. 2000 Dec; 20(24):9017–9024.",
+        tags: ["Electrophysiology", "Amygdala", "Long-term Depression"]
+      }
+    ];
+
+    const publicationList = document.getElementById("publicationList");
+    const searchInput = document.getElementById("publicationSearch");
+    const filterButtons = document.querySelectorAll(".filter-button");
+    const emptyMessage = document.getElementById("emptyMessage");
+
+    let activeFilter = "all";
+
+    function renderPublications() {
+      const keyword = searchInput.value.trim().toLowerCase();
+
+      const filtered = publications.filter((publication) => {
+        const searchableText = [
+          publication.year,
+          publication.title,
+          publication.citation,
+          publication.tags.join(" ")
+        ].join(" ").toLowerCase();
+
+        const matchesKeyword = searchableText.includes(keyword);
+        const matchesFilter = activeFilter === "all" || publication.tags.includes(activeFilter);
+
+        return matchesKeyword && matchesFilter;
+      });
+
+      publicationList.innerHTML = filtered.map((publication, index) => {
+        const tags = publication.tags.map((tag) => `<span class="tag">${tag}</span>`).join("");
+
+        return `
+          <article class="publication-row">
+            <div class="publication-year">${publication.year}</div>
+            <div class="publication-content">
+              <div class="publication-index">Publication ${String(index + 1).padStart(2, "0")}</div>
+              <h3>${publication.title}</h3>
+              <p>${publication.citation}</p>
+              <div class="tag-row">${tags}</div>
+            </div>
+          </article>
+        `;
+      }).join("");
+
+      emptyMessage.style.display = filtered.length === 0 ? "block" : "none";
+    }
+
+    searchInput.addEventListener("input", renderPublications);
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        filterButtons.forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+        activeFilter = button.dataset.filter;
+        renderPublications();
+      });
+    });
+
+    renderPublications();
+  </script>
+</body>
+</html>

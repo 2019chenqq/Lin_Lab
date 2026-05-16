@@ -1,0 +1,267 @@
+/* =========================================================
+   Research Page Styles
+   For: research.html / research-en.html
+   ========================================================= */
+
+/* ---------- Research Hero ---------- */
+
+.research-hero {
+  padding-top: 110px;
+  padding-bottom: 70px;
+}
+
+.research-hero h1 {
+  font-size: clamp(38px, 5vw, 68px);
+  line-height: 1.18;
+  color: var(--primary);
+  letter-spacing: -1.4px;
+  margin-bottom: 20px;
+}
+
+/* ---------- Research Summary Cards ---------- */
+
+.research-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 36px;
+}
+
+.summary-card {
+  padding: 26px;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 50px rgba(15, 76, 129, 0.09);
+  backdrop-filter: blur(18px);
+  transition: 0.28s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 26px 70px rgba(15, 76, 129, 0.14);
+}
+
+.summary-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  color: var(--primary);
+  background: rgba(127, 219, 255, 0.18);
+  border: 1px solid rgba(77, 168, 218, 0.18);
+  font-weight: 900;
+}
+
+.summary-card h3 {
+  color: var(--primary);
+  font-size: 22px;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+.summary-card p {
+  color: var(--muted);
+}
+
+/* ---------- Page Anchor Navigation ---------- */
+
+.research-page-nav {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.research-page-nav a {
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: var(--primary);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(77, 168, 218, 0.18);
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.research-page-nav a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(15, 76, 129, 0.12);
+}
+
+/* ---------- Research Detail Sections ---------- */
+
+.research-detail-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.research-narrative {
+  margin-top: 26px;
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 50px rgba(15, 76, 129, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.research-narrative h3 {
+  color: var(--primary);
+  font-size: 26px;
+  line-height: 1.35;
+  margin-bottom: 14px;
+}
+
+.research-narrative p {
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.research-narrative p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Highlight Block ---------- */
+
+.research-highlight {
+  margin-top: 26px;
+  padding: 34px;
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(135deg, rgba(15, 76, 129, 0.94), rgba(77, 168, 218, 0.86)),
+    radial-gradient(circle at top right, rgba(127, 219, 255, 0.34), transparent 36%);
+  color: white;
+  box-shadow: 0 26px 80px rgba(15, 76, 129, 0.18);
+}
+
+.research-highlight h3 {
+  font-size: 26px;
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+
+.research-highlight p {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* ---------- English Page Fix ---------- */
+/* 英文版不要左右對齊，避免字距被拉開 */
+
+html[lang="en"] p,
+html[lang="en"] li,
+html[lang="en"] .summary-card p,
+html[lang="en"] .research-narrative p,
+html[lang="en"] .research-highlight p,
+html[lang="en"] .section-heading p,
+html[lang="en"] .glass-card p,
+html[lang="en"] .join-banner p {
+  text-align: left;
+  text-justify: auto;
+  letter-spacing: 0;
+}
+
+/* 英文標題避免長字擠壓 */
+
+html[lang="en"] .research-hero h1,
+html[lang="en"] .section-heading h2,
+html[lang="en"] .summary-card h3,
+html[lang="en"] .research-narrative h3,
+html[lang="en"] .research-highlight h3,
+html[lang="en"] .glass-card h3 {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 980px) {
+  .research-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-hero {
+    padding-top: 82px;
+  }
+
+  .research-page-nav {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .research-hero {
+    padding-top: 70px;
+    padding-bottom: 54px;
+  }
+
+  .research-hero h1 {
+    font-size: clamp(34px, 10vw, 48px);
+    letter-spacing: -0.8px;
+  }
+
+  .research-detail-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .research-narrative,
+  .research-highlight,
+  .summary-card {
+    padding: 24px;
+  }
+
+  .research-page-nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.grant-list {
+  display: grid;
+  gap: 18px;
+}
+
+.grant-card {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 20px;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(255, 255, 255, 0.84);
+  box-shadow: 0 18px 50px rgba(15, 76, 129, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.grant-number {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  color: var(--primary);
+  background: rgba(127, 219, 255, 0.18);
+  border: 1px solid rgba(77, 168, 218, 0.20);
+  font-weight: 900;
+}
+
+.grant-content h3 {
+  color: var(--primary);
+  font-size: 22px;
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+
+.grant-meta {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+@media (max-width: 640px) {
+  .grant-card {
+    grid-template-columns: 1fr;
+  }
+}

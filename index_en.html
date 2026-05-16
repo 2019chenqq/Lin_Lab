@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prof. Hui-Ching Lin Laboratory｜Animal Behavior・Electrophysiology・Neural Signaling</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="site-shell">
+    <div class="particle-field"></div>
+
+    <div class="wave-bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 210 C120 132 215 288 340 203 C460 120 542 262 662 188 C788 110 876 234 1005 176 C1126 122 1236 170 1440 95" stroke="#4DA8DA" stroke-width="3" opacity="0.55"/>
+        <path d="M0 262 C156 168 260 315 410 230 C554 148 632 295 790 210 C942 128 1030 260 1185 185 C1290 135 1362 150 1440 126" stroke="#7FDBFF" stroke-width="2" opacity="0.74"/>
+      </svg>
+    </div>
+
+    <header class="navbar">
+      <div class="nav-inner">
+        <a href="index_en.html#home" class="brand" aria-label="Back to homepage">
+          <span class="brand-mark">
+            <img src="logo.png" alt="Prof. Hui-Ching Lin Laboratory Logo">
+          </span>
+          <span>Lin Laboratory</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#facebook">Outreach</a>
+          <a href="#join" class="nav-cta">Join Us</a>
+
+          <div class="language-switch">
+            <a href="index.html">中文</a>
+            <span>/</span>
+            <a href="index_en.html" class="active">EN</a>
+          </div>
+        </nav>
+
+        <button class="mobile-menu-button" id="menuButton" aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Animal Behavior・Electrophysiology・Neural Signaling</div>
+
+          <h1>Prof. Hui-Ching Lin</h1>
+
+          <div class="hero-subtitle">Exploring the Electrical Language of Life</div>
+
+          <p class="hero-description">
+            The laboratory uses disease animal models to investigate psychiatric and neurodevelopmental disorders,
+            integrating animal behavior, electrophysiology, neural signaling, and pharmacology to advance translational biomedical research.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#research">Explore Research</a>
+            <a class="button secondary" href="#join">Contact the Lab</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>Behavior</strong>
+              <span>Disease animal models and behavioral analysis</span>
+            </div>
+
+            <div class="stat-card">
+              <strong>Electro</strong>
+              <span>Membrane potential, synaptic plasticity, and neural activity</span>
+            </div>
+
+            <div class="stat-card">
+              <strong>Signaling</strong>
+              <span>Neurotransmission, brain function, and disease mechanisms</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orb one"></div>
+          <div class="orb two"></div>
+
+          <aside class="professor-card">
+            <div class="professor-photo" role="img" aria-label="Photo of Professor Hui-Ching Lin"></div>
+            <h2>Prof. Hui-Ching Lin</h2>
+            <p>Institute of Physiology<br />Animal Behavior・Electrophysiology・Neural Signaling</p>
+          </aside>
+
+          <div class="signal-card" aria-label="Membrane potential waveform illustration">
+            <div class="signal-top">
+              <div>
+                <div class="signal-label">Action Potential</div>
+                <p class="signal-note">Neural activity and membrane voltage dynamics</p>
+              </div>
+              <div class="signal-chip">Neural Signal</div>
+            </div>
+
+            <svg class="signal-svg" viewBox="0 0 680 310" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="lineGradient" x1="0" x2="680" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#0F4C81" />
+                  <stop offset="0.55" stop-color="#4DA8DA" />
+                  <stop offset="1" stop-color="#7FDBFF" />
+                </linearGradient>
+                <filter id="glow">
+                  <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                  <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <path d="M34 232 H124 C144 232 152 226 164 205 L198 144 C210 122 216 76 235 68 C252 61 266 119 278 167 L306 274 C318 314 344 262 360 234 C382 196 400 231 430 231 H646" stroke="url(#lineGradient)" stroke-width="7" stroke-linecap="round" class="signal-line" filter="url(#glow)"/>
+              <path d="M70 70 C120 35 174 50 205 92 C242 143 282 130 322 98 C378 52 437 78 470 128 C510 188 564 184 620 136" stroke="#0F4C81" stroke-opacity="0.14" stroke-width="2"/>
+              <path d="M76 142 C135 110 170 150 214 188 C265 232 324 205 366 168 C412 128 462 122 520 164 C566 198 604 200 642 174" stroke="#4DA8DA" stroke-opacity="0.16" stroke-width="2"/>
+              <circle class="neuron-node" cx="205" cy="92" r="9" fill="#7FDBFF"/>
+              <circle class="neuron-node" cx="470" cy="128" r="8" fill="#4DA8DA" style="animation-delay: -1s"/>
+              <circle class="neuron-node" cx="620" cy="136" r="7" fill="#0F4C81" style="animation-delay: -1.8s"/>
+              <g opacity="0.7">
+                <line x1="84" y1="250" x2="630" y2="250" stroke="#CBD5E1" stroke-width="1"/>
+                <line x1="84" y1="78" x2="630" y2="78" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="6 10"/>
+                <text x="87" y="68" fill="#64748B" font-size="13">+40 mV</text>
+                <text x="87" y="270" fill="#64748B" font-size="13">-70 mV</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="section-heading reveal">
+          <div class="section-kicker">About</div>
+          <h2>Connecting fundamental neuroscience, translational medicine, and scientific training.</h2>
+          <p>
+            Prof. Lin’s laboratory focuses on psychobiomedicine, neuroscience, and pharmacology.
+            By combining disease animal models with neuroscience approaches, the lab investigates mechanisms underlying psychiatric and neurodevelopmental disorders.
+          </p>
+        </div>
+
+        <div class="about-layout">
+          <div class="glass-card reveal">
+            <div class="icon-box">🔬</div>
+            <h3>Research Philosophy</h3>
+            <p>
+              The laboratory centers on animal behavior, electrophysiology, and neural signaling.
+              Starting from disease-related behavioral phenotypes, the lab investigates how neural activity,
+              synaptic plasticity, and molecular regulation shape physiological and behavioral responses.
+            </p>
+            <p>
+              Through collaboration with clinical teams, the laboratory aims to establish translational research models
+              and identify novel therapeutic targets and treatment strategies for psychiatric and neurodevelopmental disorders.
+            </p>
+
+            <div class="tag-row">
+              <span class="tag">Animal Behavior</span>
+              <span class="tag">Electrophysiology</span>
+              <span class="tag">Neural Signaling</span>
+            </div>
+          </div>
+
+          <div class="timeline reveal">
+            <div class="timeline-item">
+              <div class="timeline-year">Education</div>
+              <div>
+                <strong>Academic Training</strong>
+                <p>1998　B.S., Pharmacy, Taipei Medical University</p>
+                <p>2000　M.S., Pharmacology, National Cheng Kung University</p>
+                <p>2008　Ph.D., Basic Medical Sciences, National Cheng Kung University</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">Experience</div>
+              <div>
+                <strong>Academic Appointments</strong>
+                <p>2025－Present　Chair / Director, Institute of Physiology, National Yang Ming Chiao Tung University</p>
+                <p>2022－Present　Professor, Institute of Physiology, National Yang Ming Chiao Tung University</p>
+                <p>2019－2021　Professor, Institute of Physiology, National Yang-Ming University</p>
+                <p>2016－2019　Associate Professor, Institute of Physiology, National Yang-Ming University</p>
+                <p>2011－2016　Assistant Professor, Institute of Physiology, National Yang-Ming University</p>
+                <p>2008－2011　Postdoctoral Fellow, Institute of Pharmacology, National Cheng Kung University</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">Expertise</div>
+              <div>
+                <strong>Research Expertise</strong>
+                <p>Animal behavior, electrophysiology, neural signaling, psychobiomedicine, pharmacology, and translational medical research.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="research">
+        <div class="section-heading reveal">
+          <div class="section-kicker">Research</div>
+          <h2>Linking disease animal models with psychobiomedicine, neuroscience, and clinical translation.</h2>
+          <p>
+            The laboratory focuses on psychiatric and neurodevelopmental disorders,
+            integrating animal behavior, electrophysiology, neural signaling, and pharmacology
+            to investigate disease mechanisms and emerging therapeutic strategies.
+          </p>
+        </div>
+
+        <div class="grid three">
+          <article class="glass-card research-card reveal">
+            <div class="icon-box">🐁</div>
+            <h3>Disease Animal Models</h3>
+            <p>
+              The laboratory uses animal models of psychiatric and neurodevelopmental disorders
+              to analyze disease-related behavioral phenotypes and connect them with neural activity,
+              synaptic plasticity, and pathological mechanisms.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Animal Behavior</span>
+              <span class="tag">Disease Models</span>
+            </div>
+          </article>
+
+          <article class="glass-card research-card reveal">
+            <div class="icon-box">🧠</div>
+            <h3>Treatment-Resistant Depression</h3>
+            <p>
+              The lab investigates animal models resistant to first-line antidepressants,
+              focusing on prefrontal cortical deficits, amygdala hyperactivity,
+              synaptic plasticity abnormalities, and emerging treatment mechanisms.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Depression</span>
+              <span class="tag">Translational Medicine</span>
+            </div>
+          </article>
+
+          <article class="glass-card research-card reveal">
+            <div class="icon-box">⚡</div>
+            <h3>Autism and Neurodevelopment</h3>
+            <p>
+              Using rodent models with autism-like behaviors, the lab investigates neural transmission imbalance,
+              synaptic dysfunction, and transgenerational effects to identify potential therapeutic strategies.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Autism</span>
+              <span class="tag">Neurodevelopment</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="research-more-action">
+          <a class="button primary" href="research_en.html">Read Full Research Directions</a>
+        </div>
+      </section>
+
+      <section id="publications">
+        <div class="section-heading reveal">
+          <div class="section-kicker">Publications</div>
+          <h2>Selected Publications</h2>
+          <p>
+            The laboratory’s research covers treatment-resistant depression, autism, neural signaling,
+            synaptic plasticity, and translational medicine. This section highlights selected representative publications.
+            The complete list is available on the Publications page.
+          </p>
+        </div>
+
+        <div class="publication-list reveal">
+          <article class="publication-item">
+            <strong>Animal models and clinical translational findings related to treatment-resistant depression.</strong>
+            <div class="publication-meta">
+              Progress in Neuro-Psychopharmacology & Biological Psychiatry. 2019.
+            </div>
+            <div class="tag-row">
+              <span class="tag">Depression</span>
+              <span class="tag">Translational Medicine</span>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <strong>Mechanisms by which iTBS improves depressive behavior and synaptic plasticity abnormalities.</strong>
+            <div class="publication-meta">
+              Cerebral Cortex. 2021.
+            </div>
+            <div class="tag-row">
+              <span class="tag">iTBS</span>
+              <span class="tag">BDNF</span>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <strong>Transgenerational regulation of social behavior and synaptic balance in autism-related models.</strong>
+            <div class="publication-meta">
+              Journal of Biomedical Science. 2022.
+            </div>
+            <div class="tag-row">
+              <span class="tag">Autism</span>
+              <span class="tag">Synaptic Balance</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="research-more-action">
+          <a class="button primary" href="publications_en.html">View All Publications</a>
+        </div>
+      </section>
+
+      <section id="teaching">
+        <div class="section-heading reveal">
+          <div class="section-kicker">Teaching</div>
+          <h2>From behavioral observation to neural electrical signals, guiding students toward core questions in neurophysiology.</h2>
+          <p>
+            This section may include course information, teaching resources, laboratory training, and frequently asked questions
+            for students interested in joining the laboratory.
+          </p>
+        </div>
+
+        <div class="grid three">
+          <div class="glass-card reveal">
+            <div class="icon-box">📘</div>
+            <h3>Physiology and Neuroscience</h3>
+            <p>Core concepts in neurophysiology, cellular physiology, and psychobiomedical research.</p>
+          </div>
+
+          <div class="glass-card reveal">
+            <div class="icon-box">⚡</div>
+            <h3>Electrophysiological Methods</h3>
+            <p>Membrane potential, action potentials, synaptic plasticity, and neural activity recording.</p>
+          </div>
+
+          <div class="glass-card reveal">
+            <div class="icon-box">🎓</div>
+            <h3>Student Training</h3>
+            <p>Graduate student recruitment, undergraduate research training, thesis supervision, and laboratory learning.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="facebook">
+        <div class="facebook-panel">
+          <div class="section-heading reveal no-margin">
+            <div class="section-kicker">Dr. Lin's Electrophysiology World</div>
+            <h2>Bringing scientific knowledge to a broader audience.</h2>
+            <p>
+              This section may connect to the Facebook page “Dr. Lin's Electrophysiology World,”
+              featuring science communication, course activities, research updates, and laboratory news.
+            </p>
+
+            <div class="hero-actions facebook-action">
+              <a class="button primary" href="https://www.facebook.com/people/DrLin%E7%9A%84%E9%9B%BB%E7%94%9F%E7%90%86%E4%B8%96%E7%95%8C/100075885976029/" target="_blank" rel="noreferrer">
+                Visit Facebook Page
+              </a>
+            </div>
+          </div>
+
+          <div class="post-stack reveal">
+            <article class="fb-post">
+              <span>Science Communication</span>
+              <h3>What is an action potential?</h3>
+              <p>A clear and visual explanation of how neurons transmit information through electrical signals.</p>
+            </article>
+
+            <article class="fb-post">
+              <span>Research Insight</span>
+              <h3>Ion channels and neural signaling</h3>
+              <p>Understanding neural activity and physiological regulation from the cell membrane.</p>
+            </article>
+
+            <article class="fb-post">
+              <span>Lab News</span>
+              <h3>Research directions and recruitment</h3>
+              <p>Students interested in psychobiomedicine, neuroscience, and electrophysiology are welcome to join the lab.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="members">
+        <div class="section-heading reveal">
+          <div class="section-kicker">Lab Members</div>
+          <h2>Research Team</h2>
+          <p>
+            This section may introduce graduate students, undergraduate researchers, and collaborators,
+            highlighting the laboratory’s research training and academic environment.
+          </p>
+        </div>
+
+        <div class="grid three">
+          <div class="glass-card member-card reveal">
+            <div class="avatar">PhD</div>
+            <h3>Doctoral Students</h3>
+            <p>Research topics: neural signaling, disease animal models, and translational medicine.</p>
+          </div>
+
+          <div class="glass-card member-card reveal">
+            <div class="avatar">MS</div>
+            <h3>Master’s Students</h3>
+            <p>Research topics: animal behavior, electrophysiology, and neural plasticity.</p>
+          </div>
+
+          <div class="glass-card member-card reveal">
+            <div class="avatar">UG</div>
+            <h3>Undergraduate Researchers</h3>
+            <p>Research training in behavioral analysis, basic experimental methods, and literature review.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="join">
+        <div class="join-banner reveal">
+          <div>
+            <h2>Join Us</h2>
+            <p>
+              Students interested in psychobiomedicine, neuroscience, animal behavior, electrophysiology,
+              and translational medicine are welcome to join the research team.
+            </p>
+
+            <div class="hero-actions join-action">
+              <a class="button secondary" href="mailto:example@nycu.edu.tw">Contact the Lab</a>
+            </div>
+          </div>
+
+          <ul class="join-list">
+            <li>Suitable for students interested in psychiatric and neurodevelopmental disorders</li>
+            <li>Opportunities to learn animal behavior, electrophysiology, and neuroscience techniques</li>
+            <li>Recruitment information, training details, and contact information can be added here</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Prof. Hui-Ching Lin Laboratory. Connecting science, translation, and education through the electrical language of life.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
